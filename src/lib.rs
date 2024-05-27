@@ -1,6 +1,9 @@
 pub mod absolute_button;
+pub use absolute_button::*;
 pub mod ui_window;
+pub use ui_window::*;
 pub mod context_menu;
+pub use context_menu::*;
 
 use bevy::prelude::*;
 
@@ -10,8 +13,8 @@ impl Plugin for BevyUiWindows {
         app
             .add_plugins((
                 bevy_cursor_tools::CursorResourcePlugin,
-                absolute_button::InteractionButtonSystemsPlugin,
-                context_menu::ContextMenuSystemsPlugin,
+                InteractionButtonSystemsPlugin,
+                ContextMenuSystemsPlugin,
             ))
         ;
     }
