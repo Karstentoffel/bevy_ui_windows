@@ -1,6 +1,6 @@
-mod absolute_button;
-mod ui_window;
-mod context_menu;
+pub mod absolute_button;
+pub mod ui_window;
+pub mod context_menu;
 
 use bevy::prelude::*;
 
