@@ -4,6 +4,7 @@ pub mod ui_window;
 pub use ui_window::*;
 pub mod context_menu;
 pub use context_menu::*;
+pub use bevy_cursor_tools::*;
 
 use bevy::prelude::*;
 
@@ -12,7 +13,7 @@ impl Plugin for BevyUiWindows {
     fn build(&self, app: &mut App) {
         app
             .add_plugins((
-                bevy_cursor_tools::CursorResourcePlugin,
+                CursorResourcePlugin,
                 InteractionButtonSystemsPlugin,
                 ContextMenuSystemsPlugin,
             ))
