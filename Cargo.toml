@@ -1,0 +1,10 @@
+[package]
+name = "ui_windows"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+bevy = "0.13.2"
+bevy_cursor_tools = { git = "https://github.com/Karstentoffel/bevy_cursor_tools", version = "0.1.0" }
