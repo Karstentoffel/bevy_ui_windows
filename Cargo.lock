@@ -444,7 +444,7 @@ dependencies = [
 [[package]]
 name = "bevy_cursor_tools"
 version = "0.1.0"
-source = "git+https://github.com/Karstentoffel/bevy_cursor_tools#70aa75247f13386e86cc124dc21abbe57d2975f2"
+source = "git+https://github.com/Karstentoffel/bevy_cursor_tools#4bfb52c0f5337e536fadbabe11990759e374e623"
 dependencies = [
  "bevy",
 ]
@@ -969,6 +969,14 @@ dependencies = [
  "bytemuck",
  "taffy",
  "thiserror",
+]
+
+[[package]]
+name = "bevy_ui_windows"
+version = "0.1.0"
+dependencies = [
+ "bevy",
+ "bevy_cursor_tools",
 ]
 
 [[package]]
@@ -3270,14 +3278,6 @@ name = "typeid"
 version = "1.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "059d83cc991e7a42fc37bd50941885db0888e34209f8cfd9aab07ddec03bc9cf"
-
-[[package]]
-name = "ui_windows"
-version = "0.1.0"
-dependencies = [
- "bevy",
- "bevy_cursor_tools",
-]
 
 [[package]]
 name = "unicode-ident"
